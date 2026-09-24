@@ -35,7 +35,7 @@ Pair this with `Unregister(UWorld*, IWildModsSSDMSurfaceFieldProvider*)` before 
 provider is destroyed. The registry does not own that pointer. Never reuse an old
 capture across provider unregister/re-register, even if IDs and revisions match.
 The v2 provider interface is declared completely in
-[WildModsSSDMSurfaceField.h](../Source/WildMods_SSDM/Public/WildModsSSDMSurfaceField.h).
+`Source/WildMods_SSDM/Public/WildModsSSDMSurfaceField.h` in the installed plugin.
 External metadata-only capture providers do not automatically gain GPU output
 delivery; the complete GPU producer example below uses Core's own source capture.
 

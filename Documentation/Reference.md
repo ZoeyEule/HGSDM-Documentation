@@ -14,6 +14,7 @@
 | Bevel Depth | 0 cm | Maximum vertical change per sample; 0 leaves height unchanged. Historically serialized as MirrorDepthCm; it does not make an underside. |
 | Bevel Radius Override | 0 cm | 0 uses Bevel Depth as source-space radius; explicit values change filter width, capped to a repeat. |
 | Enable Side-View Depth | On | Upper relief from sides, without mirroring. Texture height supports YZ/triplanar; strict authored output uses captured height. |
+| Side-View Trace Samples | 128; 8..512 | Maximum samples for the general side-view carrier solver. 16 is the balanced performance setting; 8 is aggressive. Eligible exact planar faces do not use this limit. |
 | Enable Mirrored Surface | Off; advanced | Reflected underside with the same source/mapping eligibility. |
 | Mirror Point | 5 cm | Reflection level outward from carrier. Maximum D anchored or D/2 centered. Underside = 2*point - upper height; the maximum can collapse the shell to its highest contour. |
 | Re-evaluate Mirror Side Material | Off; experimental | Retain original opaque Default Lit material at virtual positions on blendable GBuffer. Cache-safe static world-coordinate materials/MICs only; not dynamic instances, time/view/scene dependence or untracked collection edits. UV-only graphs retain their UVs; unsupported cases use captured material. |
