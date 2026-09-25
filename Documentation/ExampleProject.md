@@ -6,4 +6,4 @@ The separate example project intentionally does not contain or redistribute HGSD
 2. Download and extract the single `HGSDM_ExampleProject` folder.
 3. Open `HGSDM_ExampleProject.uproject` with UE5.8.
 
-The descriptor enables `WildMods_SSDM`; its startup map is the showroom supplied by the installed plugin. If Unreal reports a missing plugin, install HGSDM for that exact engine version. Never place a `Plugins/WildMods_SSDM` copy inside the example-project archive.
+The descriptor enables `WildMods_SSDM`. The example project opens its own `/Game/Maps/HGSDM_Example` level, which references the meshes, materials, profiles, and components in the separately installed plugin. If Unreal reports a missing plugin, install HGSDM for that exact engine version. Never place a `Plugins/WildMods_SSDM` copy inside the example-project archive.
